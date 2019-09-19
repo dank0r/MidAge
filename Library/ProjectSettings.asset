@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
+<<<<<<< HEAD
   productGUID: a4b134231b2cd42fe8db47ca77977651
+=======
+  productGUID: 9d823a784c99a4c01ae02c6412091bb5
+>>>>>>> 18440c4c3b49849de1c11aa1f020dda59016e797
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +17,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
+<<<<<<< HEAD
   productName: MidAge
+=======
+  productName: Asd
+>>>>>>> 18440c4c3b49849de1c11aa1f020dda59016e797
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
