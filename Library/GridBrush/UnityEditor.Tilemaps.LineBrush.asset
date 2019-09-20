@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Line Brush
   m_EditorClassIdentifier: Assembly-CSharp:UnityEditor.Tilemaps:LineBrush
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: d5ce496a4a7f448c09ec6c06591402ff, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -33,5 +33,5 @@ MonoBehaviour:
     m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Size: {x: 1, y: 1, z: 1}
   m_Pivot: {x: 0, y: 0, z: 0}
-  lineStartActive: 0
-  lineStart: {x: 0, y: 0, z: 0}
+  lineStartActive: 1
+  lineStart: {x: -13, y: -6, z: 0}
