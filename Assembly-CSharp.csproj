@@ -53,8 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BetterJump.cs" />
      <Compile Include="Assets\CameraMov.cs" />
-     <Compile Include="Assets\NewBehaviourScript1.cs" />
+     <Compile Include="Assets\Jump.cs" />
      <Compile Include="Assets\PlayerControleer.cs" />
      <Compile Include="Assets\Scenes\Starter.cs" />
  <Reference Include="UnityEditor.StandardEvents">

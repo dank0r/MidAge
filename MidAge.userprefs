@@ -1,6 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BetterJump.cs">
+    <Files>
+      <File FileName="Assets/Jump.cs" Line="26" Column="29" />
+      <File FileName="Assets/BetterJump.cs" Line="21" Column="27" />
+      <File FileName="Assets/PlayerControleer.cs" Line="23" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
