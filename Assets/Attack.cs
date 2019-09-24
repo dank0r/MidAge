@@ -13,7 +13,7 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButton("Jump")) {
+		if (Input.GetMouseButton(0)) {
 			an.SetBool ("isAttack", true);
 		} else {
 			an.SetBool ("isAttack", false);
