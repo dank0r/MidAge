@@ -1,26 +1,39 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerControleer : MonoBehaviour {
 
+	//movement AxisX
 	public float speed = 20f;
+	public float shiftSpeed = 2f;
+	private float curSpeed;
+
+	//GetComponent
 	private Rigidbody2D rb;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
-
+		curSpeed = speed;
 	}
 
 	void Update () {
+
+		if (Input.GetKey (KeyCode.LeftShift)) {
+			curSpeed = shiftSpeed;
+		} else {
+			curSpeed = speed;
+		}
+
 		float moveX = Input.GetAxis ("Horizontal"); 
+		rb.velocity = new Vector2(moveX * curSpeed, rb.velocity.y);
+
+
+
+
 		if (moveX > 0) {
 			GetComponent<SpriteRenderer> ().flipX = false;
-		} else {
+		} else if (moveX < 0) {
 			GetComponent<SpriteRenderer> ().flipX = true;
-			
 		}
-		rb.MovePosition (rb.position + Vector2.right * moveX * speed * Time.deltaTime);
-
-		if (Input.GetKeyDown (KeyCode.Space))
-			rb.AddForce (Vector2.up * 80000 * Time.deltaTime);
 	}
 }
