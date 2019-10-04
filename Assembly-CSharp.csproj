@@ -53,11 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Attack.cs" />
      <Compile Include="Assets\BetterJump.cs" />
      <Compile Include="Assets\CameraMov.cs" />
      <Compile Include="Assets\Jump.cs" />
      <Compile Include="Assets\PlayerControleer.cs" />
-     <Compile Include="Assets\Scenes\Starter.cs" />
+     <Compile Include="Assets\SwordControler.cs" />
+     <Compile Include="Assets\WorkWithBrushes\PrefabBrush.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/home/tron/MidAge/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

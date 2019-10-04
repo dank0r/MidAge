@@ -5,22 +5,35 @@ public class PlayerControleer : MonoBehaviour {
 
 	//movement AxisX
 	public float speed = 20f;
-
+	public float shiftSpeed = 2f;
+	private float curSpeed;
 
 	//GetComponent
 	private Rigidbody2D rb;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
+		curSpeed = speed;
 	}
 
 	void Update () {
+
+		if (Input.GetKey (KeyCode.LeftShift)) {
+			curSpeed = shiftSpeed;
+		} else {
+			curSpeed = speed;
+		}
+
 		float moveX = Input.GetAxis ("Horizontal"); 
-		if (moveX > 0) 
+		rb.velocity = new Vector2(moveX * curSpeed, rb.velocity.y);
+
+
+
+
+		if (moveX > 0) {
 			GetComponent<SpriteRenderer> ().flipX = false;
-		else if (moveX < 0)
+		} else if (moveX < 0) {
 			GetComponent<SpriteRenderer> ().flipX = true;
-		
-		//rb.MovePosition (rb.position + Vector2.right * moveX * speed * Time.deltaTime);
+		}
 	}
 }
