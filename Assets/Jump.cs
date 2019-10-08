@@ -12,10 +12,20 @@ public class Jump : MonoBehaviour {
 	private bool isGrounded;  
 
 
-	void OnCollisionEnter2D(Collision2D col)
-	{
-		isGrounded = true;
-	}
+	void OnCollisionEnter2D(Collision2D col){
+        GameObject g = col.gameObject;
+        Vector2 off = GetComponent<CapsuleCollider2D>().offset; // CapsuleCollider2D
+        Vector3 cpos = transform.position + new Vector3(off.x, off.y, 0);
+        Vector2 sz = g.GetComponent<SpriteRenderer>().size;
+        Vector2 csz = GetComponent<CapsuleCollider2D>().size; // CapsuleCollider2D
+        if (cpos.y - csz.y / 2 >= g.transform.position.y + sz.y)
+            isGrounded = true;
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        isGrounded = false;
+    }
 
 	private Rigidbody2D rb;
 
