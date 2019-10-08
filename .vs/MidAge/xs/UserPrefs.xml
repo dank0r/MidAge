@@ -1,7 +1,7 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerController.cs">
     <Files>
-      <File FileName="Assets/PlayerController.cs" Line="54" Column="56" />
+      <File FileName="Assets/PlayerController.cs" Line="40" Column="1" />
       <File FileName="Assets/Jump.cs" Line="29" Column="18" />
     </Files>
     <Pads>
@@ -10,7 +10,7 @@
           <Node name="MidAge" expanded="True">
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
+                <Node name="Jump.cs" selected="True" />
               </Node>
             </Node>
           </Node>

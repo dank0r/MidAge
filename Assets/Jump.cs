@@ -12,10 +12,14 @@ public class Jump : MonoBehaviour {
 	private bool isGrounded;  
 
 
-	void OnCollisionEnter2D(Collision2D col)
-	{
-		isGrounded = true;
+	void OnCollisionEnter2D(Collision2D col){
+        isGrounded = true;
 	}
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        isGrounded = false;
+    }
 
 	private Rigidbody2D rb;
 
