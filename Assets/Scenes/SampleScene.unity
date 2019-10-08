@@ -12984,7 +12984,6 @@ GameObject:
   - component: {fileID: 1215206281}
   - component: {fileID: 1215206285}
   - component: {fileID: 1215206287}
-  - component: {fileID: 1215206286}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -13109,19 +13108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   shiftSpeed: 2
---- !u!114 &1215206286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1215206280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339fbc444a35e470aa0af9eff6355d01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 4
 --- !u!114 &1215206287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13134,6 +13120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpVelocity: 7.1
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 4
 --- !u!1001 &1215754635
 Prefab:
   m_ObjectHideFlags: 0
