@@ -3653,7 +3653,6 @@ GameObject:
   - component: {fileID: 331207585}
   - component: {fileID: 331207584}
   - component: {fileID: 331207588}
-  - component: {fileID: 331207587}
   m_Layer: 0
   m_Name: SwordSprite_0
   m_TagString: Untagged
@@ -3736,20 +3735,8 @@ Transform:
   m_LocalScale: {x: 2.126, y: 2.0163, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &331207587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 331207583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c00d5c7c87948de8a0e61c3bd84383, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 1215206280}
 --- !u!114 &331207588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13093,7 +13080,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1215206285
 MonoBehaviour:
@@ -13108,6 +13095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   shiftSpeed: 2
+  sword: {fileID: 331207583}
 --- !u!114 &1215206287
 MonoBehaviour:
   m_ObjectHideFlags: 0
